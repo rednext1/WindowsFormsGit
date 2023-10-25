@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -40,14 +41,26 @@
             label1.TabIndex = 0;
             label1.Text = "Test 1";
             // 
+            // button1
+            // 
+            button1.Location = new Point(335, 359);
+            button1.Name = "button1";
+            button1.Size = new Size(166, 70);
+            button1.TabIndex = 1;
+            button1.Text = "Generate Quots";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Git Hub Test";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -55,5 +68,6 @@
         #endregion
 
         private Label label1;
+        private Button button1;
     }
 }
